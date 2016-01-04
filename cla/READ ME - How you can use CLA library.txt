@@ -1,3 +1,9 @@
+
+++++++++++++++++++++++ VERSION 1.1 ++++++++++++++++++++++
+
+- Q.: What's new?
+- A.: You can add rotating effect. Just use clss "rotated" with "animated on scroll" class...
+
 How usage CLA (Classic Landing Animation) library:
 
 
@@ -10,7 +16,9 @@ How usage CLA (Classic Landing Animation) library:
 
 /*Use:*/
 
+<div class="animated-on-scroll"></div>
 <div class="animated-on-scroll left-to-right-direction"></div>
+<div class="animated-on-scroll rotated"></div>
 
 /*Customize it:*/
 

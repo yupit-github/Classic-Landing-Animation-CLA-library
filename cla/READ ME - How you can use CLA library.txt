@@ -1,0 +1,64 @@
+How usage CLA (Classic Landing Animation) library:
+
+
+============================QUICK EXPLAIN:============================
+/*Include:*/
+
+<link href="cla/cla.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="cla/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="cla/cla.js"></script>
+
+/*Use:*/
+
+<div class="animated-on-scroll left-to-right-direction"></div>
+
+/*Customize it:*/
+
+claCustomization({
+    "transition-duration": "5s"
+});
+
+
+Thats ALL!.. :)
+
+
+============================Full instructions (IF YOU WANT MORE DETAILS):============================
+
+---------Files including---------
+1. Include styles for CLA:
+
+2. Include jQuery for CLA (if you have jQuery already, ignore it,
+but remember please, that jQuery should be included before cla.js):
+
+3. Include javascript for CLA:
+
+/*
+* All code for including example:
+*/
+
+<link href="cla/cla.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="cla/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="cla/cla.js"></script>
+
+---------Specify which elements and how to animate---------
+1. Set class "animated-on-scroll" for initialization for you element
+2. Set class "[from]-to-[when]-direction" (for example, class: "bottom-to-top-direction")
+
+/*
+* All code for initialization example:
+*/
+
+<div class="animated-on-scroll left-to-right-direction"></div>
+
+---------Configuring, settings, customization---------
+If you want make some changes, for example duration, delay etc. you can call function
+"claCustomization" in your script file (it should be included after cla.js) on DOM ready event
+and give as param object-config with css-properties.
+
+/*
+* Customization code example (will changed duration to "5s"):
+*/
+
+claCustomization({
+    "transition-duration": "5s"
+});
